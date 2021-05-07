@@ -36,6 +36,8 @@ img {
   }
 
   .card {
+    padding: 0;
+    padding-top: 16px;
     width: 23%;
     margin: 2px;
     height: 130px;
@@ -43,16 +45,20 @@ img {
     text-align: center;
     
   }
-  .content{
-    padding-top: 10px;
-  }
+  
   .content p {
     font-size: 8px;
     margin: 0;
+    margin-bottom: 4px;
     font-weight: 600;
     color: #000;
   }
+  .bottomtext{
+    margin-top: 10px!important;
+  }
   .cardclicked {
+    padding: 0;
+    padding-top: 16px;
     color: #000;
     background-color: #c294eb;
     border: 1px solid #000;
@@ -208,6 +214,7 @@ img {
   .content p {
     font-size: 1.1rem;
     margin: 0;
+    margin-bottom: 6px;
     font-weight: 600;
     color: #000;
   }
