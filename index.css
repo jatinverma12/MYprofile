@@ -40,6 +40,7 @@ img {
     margin: 2px;
     height: 130px;
     border: 1px solid #c294eb;
+    text-align: center;
     
   }
   .content{
@@ -58,6 +59,8 @@ img {
     width: 23%;
     height: 130px;
     text-align: center;
+    border-radius: 0.25rem;
+    margin: 2px;
   }
   .hampburger {
     display: block;
@@ -190,11 +193,13 @@ img {
     margin-top: 2rem;
   }
   .card {
+    padding: 0;
     padding-top: 1.5rem;
     width: 15%;
     margin: 1%;
     height: 200px;
     border: 2px solid #c294eb;
+    text-align: center;
   }
   /* .content{
     padding-top: 1.5rem;
@@ -213,12 +218,14 @@ img {
   .cardclicked {
     color: #000;
     background-color: #c294eb;
-    border: 1px solid #000;
+    border: 2px solid #000;
     width: 15%;
     height: 200px;
     text-align: center;
     margin: 1%;
+    padding: 0;
     padding-top: 1.5rem;
+    border-radius: 0.25rem;
   }
   .editbutton{
     display: block;
@@ -228,6 +235,6 @@ img {
     margin: 1rem auto;
     padding-top: 11px;
     border-radius: 0;
-    color: black;
+    color: #000;
   }
 }
