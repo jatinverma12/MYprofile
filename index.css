@@ -1,0 +1,233 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (min-width: 360px) {
+  .editbutton{
+    display: none;
+  }
+  .profileimage {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profileimage p {
+    margin-bottom: 0;
+    margin-top: 8px;
+    text-align: center;
+  }
+  .editlink {
+    display: inline-block;
+  }
+  .formdetail {
+    justify-content: space-around;
+    margin: 4px 0;
+  }
+
+  .mycard {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+  }
+
+  .card {
+    width: 23%;
+    margin: 2px;
+    height: 130px;
+    border: 1px solid #c294eb;
+    
+  }
+  .content{
+    padding-top: 10px;
+  }
+  .content p {
+    font-size: 8px;
+    margin: 0;
+    font-weight: 600;
+    color: #000;
+  }
+  .cardclicked {
+    color: #000;
+    background-color: #c294eb;
+    border: 1px solid #000;
+    width: 23%;
+    height: 130px;
+    text-align: center;
+  }
+  .hampburger {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+  }
+
+  /* Modal Content */
+  .modal-content {
+    position: fixed;
+    top: 2rem;
+    background-color: #fefefe;
+    width: 40%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+  }
+
+  .listofoptions {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  .listofoptions li {
+    margin: 4px;
+  }
+  .listofoptions li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+  }
+
+  @-webkit-keyframes slideIn {
+    from {
+      left: -300px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      left: -300px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .linkcontainer {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .editlink{
+    display: none;
+  }
+  .hampburger {
+    display: none;
+  }
+  .profileimage {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: unset;
+    margin: 0;
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+  .profileimage p {
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: left;
+    font-size: 1.3rem;
+  }
+  .linkcontainer {
+    display: inline-block;
+    margin-top: 2rem;
+    border-left: 1px solid #000;
+    height: 300px;
+  }
+  .linkcontainer p a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    
+  }
+  .formdetail{
+    margin: 1rem 0;
+  }
+  .mycard{
+    margin-top: 2rem;
+  }
+  .card {
+    padding-top: 1.5rem;
+    width: 15%;
+    margin: 1%;
+    height: 200px;
+    border: 2px solid #c294eb;
+  }
+  /* .content{
+    padding-top: 1.5rem;
+    } */
+
+  .content p {
+    font-size: 1.1rem;
+    margin: 0;
+    font-weight: 600;
+    color: #000;
+  }
+  .bottomtext{
+    font-size: 12px!important;
+    margin-top: 6px!important;
+  }
+  .cardclicked {
+    color: #000;
+    background-color: #c294eb;
+    border: 1px solid #000;
+    width: 15%;
+    height: 200px;
+    text-align: center;
+    margin: 1%;
+    padding-top: 1.5rem;
+  }
+  .editbutton{
+    display: block;
+    border: 2px solid #d1c9c9;
+    width: 20%;
+    height: 50px;
+    margin: 1rem auto;
+    padding-top: 11px;
+    border-radius: 0;
+    color: black;
+  }
+}
